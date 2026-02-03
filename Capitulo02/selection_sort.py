@@ -12,8 +12,10 @@ def find_smallest(arr):
 #Main Selection Sort function
 def selection_sort(arr):
     new_arr = []
-    for i in range(len(arr)):   #Finds the smallest elemento in the array
-        smallest = find_smallest(arr)  # ... pops it from the old array and appends to the new array
+    for i in range(len(arr)):   
+        #Finds the smallest elemento in the array
+        smallest = find_smallest(arr)  
+        # ... pops it from the old array and appends to the new array
         new_arr.append(arr.pop(smallest))
     
     return new_arr
